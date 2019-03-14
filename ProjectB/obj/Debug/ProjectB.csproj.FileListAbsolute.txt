@@ -1,0 +1,16 @@
+C:\Users\ok\source\repos\ProjectB\ProjectB\bin\Debug\ProjectB.exe.config
+C:\Users\ok\source\repos\ProjectB\ProjectB\bin\Debug\ProjectB.exe
+C:\Users\ok\source\repos\ProjectB\ProjectB\bin\Debug\ProjectB.pdb
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Form1.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Properties.Resources.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.csproj.GenerateResource.cache
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.csproj.CoreCompileInputs.cache
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.exe
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.pdb
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Add_Student.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Student_Data.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Edit_Student.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Add_Clo.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Manage_Rubrics.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Manage_Clo.resources
+C:\Users\ok\source\repos\ProjectB\ProjectB\obj\Debug\ProjectB.Rubric.resources
