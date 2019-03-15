@@ -67,12 +67,6 @@
     </Compile>
     <Compile Include="Add_Rubrics.cs" />
     <Compile Include="DatabaseConnection.cs" />
-    <Compile Include="Edit_Student.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Edit_Student.Designer.cs">
-      <DependentUpon>Edit_Student.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,17 +88,14 @@
       <DependentUpon>Rubric.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <Compile Include="Student_Data.cs">
+    <Compile Include="StudentGrid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_Data.Designer.cs">
-      <DependentUpon>Student_Data.cs</DependentUpon>
+    <Compile Include="StudentGrid.Designer.cs">
+      <DependentUpon>StudentGrid.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Add_Student.resx">
       <DependentUpon>Add_Student.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Edit_Student.resx">
-      <DependentUpon>Edit_Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -126,12 +117,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Rubric.resx">
       <DependentUpon>Rubric.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_Data.resx">
-      <DependentUpon>Student_Data.cs</DependentUpon>
+    <EmbeddedResource Include="StudentGrid.resx">
+      <DependentUpon>StudentGrid.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -145,6 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1468070454955-c5b6932bd08d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-clipart-drawing-pencil-and-in-color-arrow-clipart-clipart-k2PNx2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right-Side-Triangle-Arrow-Grey-Color-596x1024.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

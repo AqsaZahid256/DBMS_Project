@@ -31,7 +31,8 @@ namespace ProjectB
 		private string First_Name;
 		private string Last_Name;
 		private string Contact;
-		private string Email;
+		
+	    private string Email;
 		private string Registration_No;
 		private string Status;
 		// Student Name getter setter

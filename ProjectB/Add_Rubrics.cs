@@ -32,7 +32,10 @@ namespace ProjectB
 		}
 		public void set_Details(string value)
 		{
-			Details = value;
+			if (value != "")
+			{
+				Details = value;
+			}
 
 		}
 		public int get_CloId()

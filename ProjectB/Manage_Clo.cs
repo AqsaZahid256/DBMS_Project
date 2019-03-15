@@ -17,6 +17,7 @@ namespace ProjectB
 		public Manage_Clo()
 		{
 			InitializeComponent();
+			panel1.Hide();
 		}
 
 		private void Manage_Clo_Load(object sender, EventArgs e)
@@ -45,9 +46,9 @@ namespace ProjectB
 		}
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-			try
+			if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete" && (e.RowIndex >= 0))
 			{
-				if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete")
+				try
 				{
 					MessageBox.Show("you are going to delete this row");
 					string constr = "Data Source=DESKTOP-GP94IEM\\SQLEXPRESS;Initial Catalog=Projectb;Integrated Security=True";
@@ -62,7 +63,7 @@ namespace ProjectB
 					if (a3.ExecuteScalar() != null)
 					{
 						int rows2 = (int)a3.ExecuteScalar();
-						if (rows2 != 0 || rows2 != null)
+						if (rows2 != 0 )
 						{
 
 							string Id = string.Format("DELETE FROM Rubric WHERE CloId=@Id");
@@ -91,23 +92,126 @@ namespace ProjectB
 						if (l != 0)
 						{
 							MessageBox.Show("Data deleted");
-							conn.Close();
+							
+
+							this.Hide();
+							Manage_Clo d1 = new Manage_Clo();
+							d1.Show();
 						}
+						conn.Close();
 					}
 				}
-				
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			}
+			else if (dataGridView1.Columns[e.ColumnIndex].Name == "Edit" && (e.RowIndex >= 0))
+			{
+				SqlConnection c = new SqlConnection(constr);
+				c.Open();
+				panel1.Show();
+				int f = dataGridView1.CurrentCell.RowIndex;
+				int id4 = (int)(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
+				//MessageBox.Show("Updating this entry");
 
-				this.Hide();
-				Manage_Clo d1 = new Manage_Clo();
-				d1.Show();
+				string s2 = string.Format("SELECT Name,DateCreated,DateUpdated FROM Clo Where Id=@Id");
+				SqlCommand d = new SqlCommand(s2, c);
+				d.Parameters.Add(new SqlParameter("@Id", id4));
+				SqlDataReader dr = d.ExecuteReader();
+				try
+				{
+					while (dr.Read())
+					{
+						text1.Text = dr.GetString(0);
+						dateTimePicker3.Value = (DateTime)dr.GetValue(1);
+						dateTimePicker4.Value = (DateTime)dr.GetValue(2);
+
+					}
+					dr.Close();
+					panel1.Show();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			}
+			else
+			{
+				MessageBox.Show("No data Here");
+			}
+
+
+
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				CLO s = new CLO();
+				s.set_Name(text1.Text);
+				s.set_Data_Created(dateTimePicker3.Value);
+				s.set_Data_Updated(dateTimePicker4.Value);
+				
+				if ((s.get_Name() == null) || (s.get_Data_Created() == null) || (s.get_Data_Updated() == null))
+				{
+					MessageBox.Show("Submssion is not allowed with null values");
+				}
+				else
+				{
+					string constr = "Data Source=DESKTOP-GP94IEM\\SQLEXPRESS;Initial Catalog=Projectb;Integrated Security=True";
+					SqlConnection c = new SqlConnection(constr);
+					c.Open();
+					int f = dataGridView1.CurrentCell.RowIndex;
+					int id4 = (int)(dataGridView1.Rows[f].Cells["Id"].Value);
+					//MessageBox.Show("Updating this entry"
+
+					string s1 = string.Format("UPDATE clo SET Name=@Name, DateCreated=@DateCreated,DateUpdated=@DateUpdated where Id=@Id");
+
+					//values('" + s.get_FirstName() + "',  '" + s.get_LastName() + "','" + s.get_Contact() + "','" + s.get_Email() + "','" + s.get_Registration_No() + "','" + id + "')");
+
+					//string s1 = string.Format("INSERT INTO Student(FirstName,LastName,Contact,Email,RegistrationNumber,Status) values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", s.get_FirstName(), s.get_LastName(), s.get_Contact(), s.get_Email(), s.get_Registration_No(), id);
+					SqlCommand a2 = new SqlCommand(s1, c);
+					//GetExample(a2, p.ToArray());
+
+					a2.Parameters.Add(new SqlParameter("Id", id4));
+
+					a2.Parameters.Add(new SqlParameter("@Name", SqlDbType.VarChar));
+					a2.Parameters["@Name"].Value = s.get_Name();
+					a2.Parameters.Add(new SqlParameter("@DateCreated", SqlDbType.DateTime));
+					a2.Parameters["@DateCreated"].Value = s.get_Data_Created();
+					a2.Parameters.Add(new SqlParameter("@DateUpdated", SqlDbType.DateTime));
+					a2.Parameters["@DateUpdated"].Value = s.get_Data_Updated();
+				
+					int rows = a2.ExecuteNonQuery();
+					if (rows != 0)
+					{
+						MessageBox.Show("CLO Updated");
+						c.Close();
+						panel1.Hide();
+						this.Close();
+						Manage_Clo j = new Manage_Clo();
+						j.Show();
+					}
+
+				}
 
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
 			}
-
 		}
 
+		private void button2_Click(object sender, EventArgs e)
+		{
+			panel1.Hide();
+		}
+
+		private void label6_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

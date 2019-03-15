@@ -34,5 +34,34 @@ namespace ProjectB
 			Rubric r = new Rubric();
 			r.Show();
 		}
+
+		private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			StudentGrid h = new StudentGrid();
+			h.Show();
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			StudentGrid g = new StudentGrid();
+			g.Show();
+		}
+
+		private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Manage_Rubrics r = new Manage_Rubrics();
+			r.Show();
+		}
+
+		private void linkLabel4_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Manage_Clo c = new Manage_Clo();
+			c.Show();
+		}
 	}
 }

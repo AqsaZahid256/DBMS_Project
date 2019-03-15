@@ -54,8 +54,12 @@ namespace ProjectB
 					if (rows != 0)
 					{
 						MessageBox.Show("Student Added");
+						this.Close();
+						StudentGrid n = new StudentGrid();
+						n.Show();
 					}
 					c.Close();
+
 				}
 				
 			}
@@ -64,12 +68,19 @@ namespace ProjectB
 				MessageBox.Show(ex.Message);
 			}
 
+
 		}
 
 		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Student_Data d = new Student_Data();
+			this.Close();
+			StudentGrid d = new StudentGrid();
 			d.Show();
+		}
+
+		private void label8_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }
