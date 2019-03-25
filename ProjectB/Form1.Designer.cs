@@ -45,6 +45,8 @@
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,6 +56,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkLabel1
@@ -190,6 +193,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel2.BackColor = System.Drawing.Color.Transparent;
+			this.panel2.Controls.Add(this.pictureBox8);
+			this.panel2.Controls.Add(this.linkLabel7);
 			this.panel2.Controls.Add(this.pictureBox5);
 			this.panel2.Controls.Add(this.linkLabel4);
 			this.panel2.Controls.Add(this.linkLabel5);
@@ -298,6 +303,36 @@
 			this.linkLabel6.Text = "Manage Student";
 			this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
 			// 
+			// linkLabel7
+			// 
+			this.linkLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel7.AutoSize = true;
+			this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel7.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel7.LinkColor = System.Drawing.Color.White;
+			this.linkLabel7.Location = new System.Drawing.Point(150, 262);
+			this.linkLabel7.Name = "linkLabel7";
+			this.linkLabel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel7.Size = new System.Drawing.Size(167, 21);
+			this.linkLabel7.TabIndex = 10;
+			this.linkLabel7.TabStop = true;
+			this.linkLabel7.Text = "Add Attendence";
+			this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(81, 257);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox8.TabIndex = 15;
+			this.pictureBox8.TabStop = false;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,6 +357,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -344,6 +380,8 @@
 		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.LinkLabel linkLabel6;
+		private System.Windows.Forms.PictureBox pictureBox8;
+		private System.Windows.Forms.LinkLabel linkLabel7;
 	}
 }
 

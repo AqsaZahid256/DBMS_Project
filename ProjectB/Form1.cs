@@ -63,5 +63,11 @@ namespace ProjectB
 			Manage_Clo c = new Manage_Clo();
 			c.Show();
 		}
+
+		private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Mark_Attendence n = new Mark_Attendence();
+			n.Show();
+		}
 	}
 }

@@ -30,3 +30,4 @@ C:\Users\ok\Desktop\DBMS_Project\ProjectB\bin\Debug\ProjectB.exe
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\bin\Debug\ProjectB.pdb
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.StudentGrid.resources
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.csprojAssemblyReference.cache
+C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.Mark_Attendence.resources

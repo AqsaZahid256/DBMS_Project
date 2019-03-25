@@ -2,90 +2,53 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectB
 {
-	class Student
-	{  /// <summary>  
-	   ///  default constructor
-	   /// </summary>
-		public Student()
+	class Attendence
+	{
+		///<param>
+		//</param>
+		private string Registration_No;
+		private DateTime Attendence_Date;
+		private string Student_Status;
+
+
+		/// <summary>  
+		///  default constructor
+		/// </summary>
+		public Attendence()
 		{
-			First_Name = null;
-			Last_Name = null;
-			Contact = null;
 			Registration_No = null;
-			Email = null;
-			Status = null;
+			Attendence_Date = DateTime.MinValue;
+			Student_Status = null;
+
 		}
 		/// <summary>  
 		///  data members
 		///  getter setter
 		/// </summary>
 
-		///<param>
-		//</param>
-		private string First_Name;
-		private string Last_Name;
-		private string Contact;
-		
-	    private string Email;
-		private string Registration_No;
-		private string Status;
-		// Student Name getter setter
-		public string get_FirstName()
-		{
-			return First_Name;
-		}
-		public void set_FirstName(string value)
-		{
-			bool f = true;
-			foreach (char c in value)
-			{
-				if (!char.IsLetter(c))
-				{
-					f = false;
 
-				}
-			}
-			if (f == true)
-			{
-				First_Name = value;
-			}
-			else
-			{
-				MessageBox.Show("Please enter only letter");
-			}
-		}
-		// Student Name getter setter
-		public string get_LastName()
+		public DateTime get_Attendence_Date()
 		{
-			return Last_Name;
+			return Attendence_Date;
 		}
-		public void set_LastName(string value)
+		public string get_Student_Status()
 		{
-			bool f = true;
-			foreach (char c in value)
-			{
-				if (!char.IsLetter(c))
-				{
-					f = false;
+			return Student_Status;
+		}
+		public void set_Student_Status(string value)
+		{
+			Student_Status = value;
+		}
 
-				}
-			}
-			if (f == true)
-			{
-				Last_Name = value;
-			}
-			else
-			{
-				MessageBox.Show("Please enter only letter for Name");
-			}
+		public void set_Attendence_Date(DateTime value)
+		{
+			Attendence_Date = value;
 		}
-		//Reg no getter setter
 		public string get_Registration_No()
 		{
 			return Registration_No;
@@ -233,63 +196,6 @@ namespace ProjectB
 			Registration_No = value;
 		}
 
-		public string get_Contact()
-		{
-			return Contact;
-		}
-		public void set_Contact(string value)
-		{
-			int i = value.Length;
-			if (i == 11)
-			{
-				bool f = true;
-				foreach (char c in value)
-				{
-					if (!char.IsDigit(c))
-					{
-						MessageBox.Show("Please enter only digit");
-						f = false;
-					}
-
-				}
-				if (f == false)
-				{
-					MessageBox.Show("please enter only 13 digit");
-				}
-				else
-				{
-					Contact = value;
-				}
-			}
-		}
-		public string get_Email()
-		{
-			return Email;
-		}
-		public void set_Email(string value)
-		{
-			bool f = true;
-			if (!string.IsNullOrWhiteSpace(value))
-			{
-				Regex reg = new Regex(@"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
-				if (!reg.IsMatch(value))
-				{
-					MessageBox.Show("Please Write a Valid Email Address");
-					f = false;
-				}
-				else
-				{
-					Email = value;
-				}
-			}
-		}
-		public string get_Status()
-		{
-			return Status;
-		}
-		public void set_Status(string value)
-		{
-			Status = value;
-		}
 	}
 }
+
