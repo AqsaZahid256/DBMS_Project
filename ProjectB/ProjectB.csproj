@@ -46,11 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Assessment.cs" />
     <Compile Include="Add_Student.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_Student.Designer.cs">
       <DependentUpon>Add_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assessment.Designer.cs">
+      <DependentUpon>Assessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assessment_cmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assessment_cmp.Designer.cs">
+      <DependentUpon>Assessment_cmp.cs</DependentUpon>
     </Compile>
     <Compile Include="Attendence.cs" />
     <Compile Include="CLO.cs" />
@@ -59,6 +72,12 @@
     </Compile>
     <Compile Include="Add_Clo.Designer.cs">
       <DependentUpon>Add_Clo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Assessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Assessment.Designer.cs">
+      <DependentUpon>Manage_Assessment.cs</DependentUpon>
     </Compile>
     <Compile Include="Manage_Clo.cs">
       <SubType>Form</SubType>
@@ -94,6 +113,12 @@
     <Compile Include="Rubric.Designer.cs">
       <DependentUpon>Rubric.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rubric_Level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rubric_Level.Designer.cs">
+      <DependentUpon>Rubric_Level.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="StudentGrid.cs">
       <SubType>Form</SubType>
@@ -104,11 +129,20 @@
     <EmbeddedResource Include="Add_Student.resx">
       <DependentUpon>Add_Student.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assessment.resx">
+      <DependentUpon>Assessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assessment_cmp.resx">
+      <DependentUpon>Assessment_cmp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Clo.resx">
       <DependentUpon>Add_Clo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Assessment.resx">
+      <DependentUpon>Manage_Assessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_Clo.resx">
       <DependentUpon>Manage_Clo.cs</DependentUpon>
@@ -131,6 +165,9 @@
     </Compile>
     <EmbeddedResource Include="Rubric.resx">
       <DependentUpon>Rubric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rubric_Level.resx">
+      <DependentUpon>Rubric_Level.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentGrid.resx">
       <DependentUpon>StudentGrid.cs</DependentUpon>

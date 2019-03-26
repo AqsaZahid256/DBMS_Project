@@ -36,8 +36,8 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.panel2 = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
+			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -84,6 +84,7 @@
 			this.linkLabel1.Name = "linkLabel1";
 			this.linkLabel1.Size = new System.Drawing.Size(164, 21);
 			this.linkLabel1.TabIndex = 10;
+			this.linkLabel1.TabStop = true;
 			this.linkLabel1.Text = "Manage Rubrics";
 			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
 			// 
@@ -157,19 +158,6 @@
 			this.panel1.Size = new System.Drawing.Size(837, 52);
 			this.panel1.TabIndex = 12;
 			// 
-			// panel2
-			// 
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.label1);
-			this.panel2.Controls.Add(this.linkLabel1);
-			this.panel2.Controls.Add(this.Details);
-			this.panel2.Controls.Add(this.button1);
-			this.panel2.Controls.Add(this.comboBox1);
-			this.panel2.Location = new System.Drawing.Point(-5, 58);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(323, 429);
-			this.panel2.TabIndex = 23;
-			// 
 			// label8
 			// 
 			this.label8.AutoSize = true;
@@ -182,6 +170,20 @@
 			this.label8.TabIndex = 25;
 			this.label8.Text = "HOME";
 			this.label8.Click += new System.EventHandler(this.label8_Click);
+			// 
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.label2);
+			this.panel2.Controls.Add(this.label1);
+			this.panel2.Controls.Add(this.linkLabel1);
+			this.panel2.Controls.Add(this.Details);
+			this.panel2.Controls.Add(this.button1);
+			this.panel2.Controls.Add(this.comboBox1);
+			this.panel2.Location = new System.Drawing.Point(-5, 58);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(323, 429);
+			this.panel2.TabIndex = 23;
+			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
 			// 
 			// Rubric
 			// 

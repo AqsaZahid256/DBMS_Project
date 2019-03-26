@@ -39,24 +39,30 @@
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.pictureBox10 = new System.Windows.Forms.PictureBox();
+			this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+			this.pictureBox9 = new System.Windows.Forms.PictureBox();
+			this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.linkLabel7 = new System.Windows.Forms.LinkLabel();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.linkLabel4 = new System.Windows.Forms.LinkLabel();
 			this.linkLabel5 = new System.Windows.Forms.LinkLabel();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-			this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// linkLabel1
@@ -183,7 +189,7 @@
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
 			this.pictureBox4.Location = new System.Drawing.Point(40, 3);
 			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(264, 295);
+			this.pictureBox4.Size = new System.Drawing.Size(596, 323);
 			this.pictureBox4.TabIndex = 8;
 			this.pictureBox4.TabStop = false;
 			// 
@@ -193,8 +199,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel2.BackColor = System.Drawing.Color.Transparent;
-			this.panel2.Controls.Add(this.pictureBox8);
+			this.panel2.Controls.Add(this.pictureBox10);
+			this.panel2.Controls.Add(this.linkLabel9);
 			this.panel2.Controls.Add(this.linkLabel7);
+			this.panel2.Controls.Add(this.pictureBox9);
+			this.panel2.Controls.Add(this.linkLabel8);
+			this.panel2.Controls.Add(this.pictureBox8);
 			this.panel2.Controls.Add(this.pictureBox5);
 			this.panel2.Controls.Add(this.linkLabel4);
 			this.panel2.Controls.Add(this.linkLabel5);
@@ -208,10 +218,100 @@
 			this.panel2.Controls.Add(this.pictureBox1);
 			this.panel2.Controls.Add(this.linkLabel3);
 			this.panel2.Controls.Add(this.pictureBox4);
-			this.panel2.Location = new System.Drawing.Point(292, 56);
+			this.panel2.Location = new System.Drawing.Point(157, 56);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(331, 524);
+			this.panel2.Size = new System.Drawing.Size(663, 552);
 			this.panel2.TabIndex = 9;
+			// 
+			// pictureBox10
+			// 
+			this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+			this.pictureBox10.Location = new System.Drawing.Point(365, 287);
+			this.pictureBox10.Name = "pictureBox10";
+			this.pictureBox10.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox10.TabIndex = 19;
+			this.pictureBox10.TabStop = false;
+			// 
+			// linkLabel9
+			// 
+			this.linkLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel9.AutoSize = true;
+			this.linkLabel9.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel9.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel9.LinkColor = System.Drawing.Color.White;
+			this.linkLabel9.Location = new System.Drawing.Point(430, 329);
+			this.linkLabel9.Name = "linkLabel9";
+			this.linkLabel9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel9.Size = new System.Drawing.Size(167, 21);
+			this.linkLabel9.TabIndex = 18;
+			this.linkLabel9.TabStop = true;
+			this.linkLabel9.Text = "Add Assessment";
+			this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
+			// 
+			// pictureBox9
+			// 
+			this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+			this.pictureBox9.Location = new System.Drawing.Point(365, 361);
+			this.pictureBox9.Name = "pictureBox9";
+			this.pictureBox9.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox9.TabIndex = 17;
+			this.pictureBox9.TabStop = false;
+			// 
+			// linkLabel8
+			// 
+			this.linkLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel8.AutoSize = true;
+			this.linkLabel8.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel8.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel8.LinkColor = System.Drawing.Color.White;
+			this.linkLabel8.Location = new System.Drawing.Point(448, 292);
+			this.linkLabel8.Name = "linkLabel8";
+			this.linkLabel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel8.Size = new System.Drawing.Size(133, 21);
+			this.linkLabel8.TabIndex = 16;
+			this.linkLabel8.TabStop = true;
+			this.linkLabel8.Text = "Rubric Level";
+			this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(365, 325);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox8.TabIndex = 15;
+			this.pictureBox8.TabStop = false;
+			// 
+			// linkLabel7
+			// 
+			this.linkLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel7.AutoSize = true;
+			this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel7.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel7.LinkColor = System.Drawing.Color.White;
+			this.linkLabel7.Location = new System.Drawing.Point(430, 361);
+			this.linkLabel7.Name = "linkLabel7";
+			this.linkLabel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel7.Size = new System.Drawing.Size(179, 21);
+			this.linkLabel7.TabIndex = 10;
+			this.linkLabel7.TabStop = true;
+			this.linkLabel7.Text = "Mark Attendence";
+			this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
 			// 
 			// pictureBox5
 			// 
@@ -303,43 +403,13 @@
 			this.linkLabel6.Text = "Manage Student";
 			this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
 			// 
-			// linkLabel7
-			// 
-			this.linkLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.linkLabel7.AutoSize = true;
-			this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
-			this.linkLabel7.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.linkLabel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.linkLabel7.LinkColor = System.Drawing.Color.White;
-			this.linkLabel7.Location = new System.Drawing.Point(150, 262);
-			this.linkLabel7.Name = "linkLabel7";
-			this.linkLabel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.linkLabel7.Size = new System.Drawing.Size(167, 21);
-			this.linkLabel7.TabIndex = 10;
-			this.linkLabel7.TabStop = true;
-			this.linkLabel7.Text = "Add Attendence";
-			this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(81, 257);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(68, 26);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox8.TabIndex = 15;
-			this.pictureBox8.TabStop = false;
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.BackgroundImage = global::ProjectB.Properties.Resources.photo_1468070454955_c5b6932bd08d;
-			this.ClientSize = new System.Drawing.Size(898, 582);
+			this.ClientSize = new System.Drawing.Size(898, 610);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Name = "Form1";
@@ -354,10 +424,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -382,6 +454,10 @@
 		private System.Windows.Forms.LinkLabel linkLabel6;
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.LinkLabel linkLabel7;
+		private System.Windows.Forms.PictureBox pictureBox9;
+		private System.Windows.Forms.LinkLabel linkLabel8;
+		private System.Windows.Forms.PictureBox pictureBox10;
+		private System.Windows.Forms.LinkLabel linkLabel9;
 	}
 }
 

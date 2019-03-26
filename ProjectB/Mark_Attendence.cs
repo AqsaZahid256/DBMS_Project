@@ -16,6 +16,21 @@ namespace ProjectB
 		public Mark_Attendence()
 		{
 			InitializeComponent();
+			string constr = "Data Source=DESKTOP-GP94IEM\\SQLEXPRESS;Initial Catalog=Projectb;Integrated Security=True";
+			SqlConnection c = new SqlConnection(constr);
+			c.Open();
+			//SqlCommand com = new SqlCommand(, c);
+			SqlDataAdapter da = new SqlDataAdapter("select RegistrationNumber FROM Student Except SELECT s.RegistrationNumber FROM StudentAttendance j INNER JOIN Student s ON j.StudentId = s.Id", c);
+
+			DataTable t = new DataTable();
+			da.Fill(t);
+			comboBox2.DisplayMember = "RegistrationNumber";
+			comboBox2.DataSource = t;
+			//SqlDataReader dr = com.ExecuteReader();
+
+
+
+			c.Close();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -23,7 +38,7 @@ namespace ProjectB
 			try
 			{
 				Attendence s = new Attendence();
-				s.set_Registration_No(Std_Name.Text);
+				s.set_Registration_No(comboBox2.Text);
 				s.set_Attendence_Date(dateTimePicker1.Value);
 				s.set_Student_Status(comboBox1.Text);
 
@@ -41,7 +56,7 @@ namespace ProjectB
 					int ros = y.ExecuteNonQuery();
 
 
-					string s2 = string.Format("SELECT Id FROM Student WHERE RegistrationNumber =@RegistrationNumber");
+					string s2 = string.Format("SELECT Id FROM Student WHERE RegistrationNumber =@RegistrationNumber ");
 					SqlCommand a = new SqlCommand(s2, c);
 					a.Parameters.Add(new SqlParameter("@RegistrationNumber",s.get_Registration_No()));
 					//a.Parameters.Add(new SqlParameter("@Name", this.Registration_Number.Text));
@@ -79,6 +94,21 @@ namespace ProjectB
 		private void panel2_Paint(object sender, PaintEventArgs e)
 		{
 
+		}
+
+		private void Mark_Attendence_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label5_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			this.Hide();
 		}
 	}
 }

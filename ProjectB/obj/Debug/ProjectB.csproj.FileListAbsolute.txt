@@ -29,5 +29,8 @@ C:\Users\ok\Desktop\DBMS_Project\ProjectB\bin\Debug\ProjectB.exe.config
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\bin\Debug\ProjectB.exe
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\bin\Debug\ProjectB.pdb
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.StudentGrid.resources
-C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.csprojAssemblyReference.cache
 C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.Mark_Attendence.resources
+C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.Rubric_Level.resources
+C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.Assessment.resources
+C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.Manage_Assessment.resources
+C:\Users\ok\Desktop\DBMS_Project\ProjectB\obj\Debug\ProjectB.Assessment_cmp.resources

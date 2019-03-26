@@ -69,5 +69,22 @@ namespace ProjectB
 			Mark_Attendence n = new Mark_Attendence();
 			n.Show();
 		}
+
+		private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Rubric_Level r = new Rubric_Level();
+			r.Show();
+		}
+
+		private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Assessment a = new Assessment();
+			a.Show();
+		}
+
+		private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			
+		}
 	}
 }
