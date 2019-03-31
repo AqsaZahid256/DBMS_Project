@@ -35,6 +35,7 @@ namespace ProjectB
 	    private string Email;
 		private string Registration_No;
 		private string Status;
+
 		// Student Name getter setter
 		public string get_FirstName()
 		{
@@ -45,7 +46,7 @@ namespace ProjectB
 			bool f = true;
 			foreach (char c in value)
 			{
-				if (!char.IsLetter(c))
+				if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
 				{
 					f = false;
 
@@ -55,10 +56,7 @@ namespace ProjectB
 			{
 				First_Name = value;
 			}
-			else
-			{
-				MessageBox.Show("Please enter only letter");
-			}
+			
 		}
 		// Student Name getter setter
 		public string get_LastName()
@@ -70,7 +68,7 @@ namespace ProjectB
 			bool f = true;
 			foreach (char c in value)
 			{
-				if (!char.IsLetter(c))
+				if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
 				{
 					f = false;
 
@@ -79,10 +77,6 @@ namespace ProjectB
 			if (f == true)
 			{
 				Last_Name = value;
-			}
-			else
-			{
-				MessageBox.Show("Please enter only letter for Name");
 			}
 		}
 		//Reg no getter setter
@@ -130,7 +124,7 @@ namespace ProjectB
 				}
 				if (f == false)
 				{
-					MessageBox.Show("Please enter according to format 2016-cs-256 OR 2016-cs-56 OR 2016-cs-6");
+					//MessageBox.Show("Please enter according to format 2016-cs-256 OR 2016-cs-56 OR 2016-cs-6");
 				}
 				else
 				{
@@ -174,7 +168,7 @@ namespace ProjectB
 				}
 				if (f == false)
 				{
-					MessageBox.Show("please enter according to format 2016-cs-25");
+					//MessageBox.Show("please enter according to format 2016-cs-25");
 				}
 				else
 				{
@@ -218,7 +212,7 @@ namespace ProjectB
 				}
 				if (f == false)
 				{
-					MessageBox.Show("please enter according to format 2016-cs-2");
+					//MessageBox.Show("please enter according to format 2016-cs-2");
 				}
 				else
 				{
@@ -227,7 +221,7 @@ namespace ProjectB
 			}
 			else
 			{
-				MessageBox.Show("please enter according to format 2016-CS-256 OR 2016-CS-56 OR 2016-CS-6");
+				//MessageBox.Show("please enter according to format 2016-CS-256 OR 2016-CS-56 OR 2016-CS-6");
 			}
 
 			Registration_No = value;
@@ -247,14 +241,18 @@ namespace ProjectB
 				{
 					if (!char.IsDigit(c))
 					{
-						MessageBox.Show("Please enter only digit");
+						//MessageBox.Show("Please enter only digit");
+						f = false;
+					}
+					if (value[0] != '0' && value[1] != '3')
+					{
 						f = false;
 					}
 
 				}
 				if (f == false)
 				{
-					MessageBox.Show("please enter only 13 digit");
+					//MessageBox.Show("please enter only 13 digit");
 				}
 				else
 				{
@@ -274,7 +272,7 @@ namespace ProjectB
 				Regex reg = new Regex(@"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
 				if (!reg.IsMatch(value))
 				{
-					MessageBox.Show("Please Write a Valid Email Address");
+					//MessageBox.Show("Please Write a Valid Email Address");
 					f = false;
 				}
 				else
@@ -289,7 +287,10 @@ namespace ProjectB
 		}
 		public void set_Status(string value)
 		{
-			Status = value;
+			if (value != "")
+			{
+				Status = value;
+			}
 		}
 	}
 }

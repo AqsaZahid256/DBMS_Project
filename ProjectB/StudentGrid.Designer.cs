@@ -30,14 +30,6 @@
 		{
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.RegistrationNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -59,6 +51,14 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label9 = new System.Windows.Forms.Label();
+			this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.RegistrationNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -92,52 +92,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(1200, 522);
 			this.dataGridView1.TabIndex = 1;
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-			// 
-			// FirstName
-			// 
-			this.FirstName.HeaderText = "First Name";
-			this.FirstName.Name = "FirstName";
-			// 
-			// LastName
-			// 
-			this.LastName.HeaderText = "Last Name";
-			this.LastName.Name = "LastName";
-			// 
-			// Contact
-			// 
-			this.Contact.HeaderText = "Contact";
-			this.Contact.Name = "Contact";
-			// 
-			// Email
-			// 
-			this.Email.HeaderText = "Email";
-			this.Email.Name = "Email";
-			// 
-			// RegistrationNumber
-			// 
-			this.RegistrationNumber.HeaderText = "Registration_No";
-			this.RegistrationNumber.Name = "RegistrationNumber";
-			// 
-			// Status
-			// 
-			this.Status.HeaderText = "Status";
-			this.Status.Name = "Status";
-			// 
-			// Edit
-			// 
-			this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.Edit.HeaderText = "Update";
-			this.Edit.Name = "Edit";
-			this.Edit.Text = "Update";
-			this.Edit.UseColumnTextForButtonValue = true;
-			// 
-			// Delete
-			// 
-			this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.Delete.HeaderText = "Delete";
-			this.Delete.Name = "Delete";
-			this.Delete.Text = "Delete";
-			this.Delete.UseColumnTextForButtonValue = true;
 			// 
 			// panel1
 			// 
@@ -395,6 +349,53 @@
 			this.label9.TabIndex = 28;
 			this.label9.Text = "HOME";
 			this.label9.Click += new System.EventHandler(this.label9_Click);
+			// 
+			// FirstName
+			// 
+			this.FirstName.HeaderText = "First Name";
+			this.FirstName.Name = "FirstName";
+			// 
+			// LastName
+			// 
+			this.LastName.HeaderText = "Last Name";
+			this.LastName.Name = "LastName";
+			// 
+			// Contact
+			// 
+			this.Contact.HeaderText = "Contact";
+			this.Contact.Name = "Contact";
+			// 
+			// Email
+			// 
+			this.Email.HeaderText = "Email";
+			this.Email.Name = "Email";
+			// 
+			// RegistrationNumber
+			// 
+			this.RegistrationNumber.HeaderText = "Registration_No";
+			this.RegistrationNumber.Name = "RegistrationNumber";
+			// 
+			// Status
+			// 
+			this.Status.HeaderText = "Status";
+			this.Status.Name = "Status";
+			// 
+			// Edit
+			// 
+			this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.Edit.HeaderText = "Update";
+			this.Edit.Name = "Edit";
+			this.Edit.Text = "Update";
+			this.Edit.UseColumnTextForButtonValue = true;
+			// 
+			// Delete
+			// 
+			this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.Delete.HeaderText = "Delete";
+			this.Delete.Name = "Delete";
+			this.Delete.Text = "Delete";
+			this.Delete.UseColumnTextForButtonValue = true;
+			this.Delete.Visible = false;
 			// 
 			// StudentGrid
 			// 

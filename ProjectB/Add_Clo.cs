@@ -26,10 +26,13 @@ namespace ProjectB
 				s.set_Name(Name.Text);
 				s.set_Data_Created(dateTimePicker1.Value);
 				s.set_Data_Updated(dateTimePicker2.Value);
-
-				if ((s.get_Name() == "" || (s.get_Name() == null))||(s.get_Data_Created()==null)||(s.get_Data_Updated()==null))
+				if ((Name.Text == "") || (dateTimePicker1.Value == null) || (dateTimePicker2.Value == null) )
 				{
 					MessageBox.Show("Submssion is not allowed with null values");
+				}
+				else if ((s.get_Name() == "" || (s.get_Name() == null))||(s.get_Data_Created()==null)||(s.get_Data_Updated()==null))
+				{
+					MessageBox.Show("Invalid Data Entered!!");
 				}
 				else
 				{

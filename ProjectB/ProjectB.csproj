@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,11 +77,16 @@
     <Compile Include="Assessment.Designer.cs">
       <DependentUpon>Assessment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Assessment_cmp.cs">
+    <Compile Include="Assessmentdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Assessmentdataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Assessment_cmp.Designer.cs">
-      <DependentUpon>Assessment_cmp.cs</DependentUpon>
+    <Compile Include="AssessmentResult.Designer.cs">
+      <DependentUpon>AssessmentResult.cs</DependentUpon>
     </Compile>
     <Compile Include="Attendence.cs" />
     <Compile Include="CLO.cs" />
@@ -93,6 +116,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manage_Rubric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Rubric.Designer.cs">
+      <DependentUpon>Manage_Rubric.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manage_Rubrics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +148,7 @@
     <Compile Include="Rubric_Level.Designer.cs">
       <DependentUpon>Rubric_Level.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentGrid.cs">
       <SubType>Form</SubType>
@@ -126,14 +156,20 @@
     <Compile Include="StudentGrid.Designer.cs">
       <DependentUpon>StudentGrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student_Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Result.Designer.cs">
+      <DependentUpon>Student_Result.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Student.resx">
       <DependentUpon>Add_Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Assessment.resx">
       <DependentUpon>Assessment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Assessment_cmp.resx">
-      <DependentUpon>Assessment_cmp.cs</DependentUpon>
+    <EmbeddedResource Include="AssessmentResult.resx">
+      <DependentUpon>AssessmentResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -146,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_Clo.resx">
       <DependentUpon>Manage_Clo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Rubric.resx">
+      <DependentUpon>Manage_Rubric.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_Rubrics.resx">
       <DependentUpon>Manage_Rubrics.cs</DependentUpon>
@@ -163,6 +202,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Rubric.resx">
       <DependentUpon>Rubric.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +212,21 @@
     <EmbeddedResource Include="StudentGrid.resx">
       <DependentUpon>StudentGrid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student_Result.resx">
+      <DependentUpon>Student_Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Assessmentdataset.xsc">
+      <DependentUpon>Assessmentdataset.xsd</DependentUpon>
+    </None>
+    <None Include="Assessmentdataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Assessmentdataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Assessmentdataset.xss">
+      <DependentUpon>Assessmentdataset.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -196,6 +251,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Right-Side-Triangle-Arrow-Grey-Color-596x1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,9 +43,9 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label8 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.RegistrationNumber = new System.Windows.Forms.TextBox();
-			this.label8 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -222,8 +222,22 @@
 			this.panel1.Size = new System.Drawing.Size(1200, 52);
 			this.panel1.TabIndex = 19;
 			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.label8.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.ForeColor = System.Drawing.Color.White;
+			this.label8.Location = new System.Drawing.Point(238, 11);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(100, 31);
+			this.label8.TabIndex = 24;
+			this.label8.Text = "HOME";
+			this.label8.Click += new System.EventHandler(this.label8_Click);
+			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.Silver;
 			this.panel2.Controls.Add(this.FirstName);
 			this.panel2.Controls.Add(this.LastName);
 			this.panel2.Controls.Add(this.linkLabel1);
@@ -251,19 +265,6 @@
 			this.RegistrationNumber.Name = "RegistrationNumber";
 			this.RegistrationNumber.Size = new System.Drawing.Size(309, 22);
 			this.RegistrationNumber.TabIndex = 13;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.label8.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.ForeColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(238, 11);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(100, 31);
-			this.label8.TabIndex = 24;
-			this.label8.Text = "HOME";
-			this.label8.Click += new System.EventHandler(this.label8_Click);
 			// 
 			// Add_Student
 			// 

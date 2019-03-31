@@ -28,9 +28,13 @@ namespace ProjectB
 				s.set_Date_Created(dateTimePicker1.Value);
 				s.set_Total_Marks(Marks.Text);
 				s.set_Total_Weightage(Weightage.Text);
-				if ((s.get_Title() == "") || (s.get_Date_Created() == null) || (s.get_Total_Marks() == 0 || (s.get_Total_Weightage() == 0)))
+				if ((TitleName.Text == "") || (dateTimePicker1.Value == null) || (Marks.Text == "") || (Weightage.Text == ""))
 				{
 					MessageBox.Show("Submssion is not allowed with null values");
+				}
+				else if ((s.get_Title() == null) || (s.get_Date_Created() == null) || (s.get_Total_Marks() == 0) || (Convert.ToInt16(Weightage.Text) == 0))
+				{
+					MessageBox.Show("Invalid Data Entered!!");
 				}
 				else
 				{
@@ -49,8 +53,8 @@ namespace ProjectB
 					{
 						MessageBox.Show("Added");
 						this.Close();
-						//StudentGrid n = new StudentGrid();
-						//n.Show();
+						Manage_Assessment n = new Manage_Assessment();
+						n.Show();
 					}
 					c.Close();
 

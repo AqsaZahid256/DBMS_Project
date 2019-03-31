@@ -86,5 +86,34 @@ namespace ProjectB
 		{
 			
 		}
+
+		private void linkLabel10_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Manage_Rubric i = new Manage_Rubric();
+			i.Show();
+		}
+
+		private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Student_Result l = new Student_Result();
+			l.Show();
+		}
+
+		private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Manage_Assessment t = new Manage_Assessment();
+			t.Show();
+		}
+
+		private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			AssessmentResult l = new AssessmentResult();
+			l.Show();
+		}
+
+		private void pictureBox4_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

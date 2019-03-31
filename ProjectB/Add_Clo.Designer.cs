@@ -182,6 +182,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.Silver;
 			this.panel2.Controls.Add(this.dateTimePicker2);
 			this.panel2.Controls.Add(this.label4);
 			this.panel2.Controls.Add(this.label1);
@@ -219,7 +220,7 @@
 			this.Controls.Add(this.panel1);
 			this.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			
+			//this.Name = "Add_Clo";
 			this.Text = "Add_CLO";
 			this.Load += new System.EventHandler(this.Add_Clo_Load);
 			this.panel1.ResumeLayout(false);

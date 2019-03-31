@@ -263,10 +263,9 @@ namespace ProjectB
 					int rows = a2.ExecuteNonQuery();
 					if (rows != 0)
 					{
-						MessageBox.Show("Comp Added");
-						this.Close();
-						//Manage_Clo h = new Manage_Clo();
-						//h.Show();
+						MessageBox.Show("Component Added");
+						panel1.Hide();
+				
 					}
 					c.Close();
 				}
@@ -284,12 +283,14 @@ namespace ProjectB
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			this.Hide();
+			//this.Hide();
+			panel4.Hide();
 		}
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-			this.Hide();
+			//this.Hide();
+			panel1.Hide();
 		}
 	}
 }

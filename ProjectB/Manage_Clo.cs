@@ -154,7 +154,7 @@ namespace ProjectB
 				s.set_Data_Created(dateTimePicker3.Value);
 				s.set_Data_Updated(dateTimePicker4.Value);
 				
-				if ((s.get_Name() == null) || (s.get_Data_Created() == null) || (s.get_Data_Updated() == null))
+				if ((s.get_Name() == null || s.get_Name() =="") || (s.get_Data_Created() == null) || (s.get_Data_Updated() == null))
 				{
 					MessageBox.Show("Submssion is not allowed with null values");
 				}

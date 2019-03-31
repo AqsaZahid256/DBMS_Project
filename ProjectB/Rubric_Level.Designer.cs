@@ -37,9 +37,10 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.button2 = new System.Windows.Forms.Button();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.button2 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -100,7 +101,7 @@
 			this.Details.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.Details.Multiline = true;
 			this.Details.Name = "Details";
-			this.Details.Size = new System.Drawing.Size(283, 105);
+			this.Details.Size = new System.Drawing.Size(390, 105);
 			this.Details.TabIndex = 1;
 			// 
 			// button1
@@ -108,14 +109,15 @@
 			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.button1.BackColor = System.Drawing.Color.Silver;
 			this.button1.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(15, 365);
+			this.button1.Location = new System.Drawing.Point(104, 365);
 			this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(117, 37);
+			this.button1.Size = new System.Drawing.Size(113, 37);
 			this.button1.TabIndex = 9;
 			this.button1.Text = "Add Rubrics";
-			this.button1.UseVisualStyleBackColor = true;
+			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// comboBox1
@@ -133,7 +135,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(21, 104);
 			this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 21);
+			this.comboBox1.Size = new System.Drawing.Size(390, 21);
 			this.comboBox1.TabIndex = 8;
 			// 
 			// panel1
@@ -162,7 +164,8 @@
 			// 
 			// panel2
 			// 
-			this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.panel2.BackColor = System.Drawing.Color.Silver;
+			this.panel2.Controls.Add(this.linkLabel1);
 			this.panel2.Controls.Add(this.button2);
 			this.panel2.Controls.Add(this.comboBox2);
 			this.panel2.Controls.Add(this.label3);
@@ -173,8 +176,36 @@
 			this.panel2.Controls.Add(this.comboBox1);
 			this.panel2.Location = new System.Drawing.Point(-2, 40);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(323, 429);
+			this.panel2.Size = new System.Drawing.Size(430, 429);
 			this.panel2.TabIndex = 25;
+			// 
+			// linkLabel1
+			// 
+			this.linkLabel1.AutoSize = true;
+			this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel1.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel1.LinkColor = System.Drawing.Color.Teal;
+			this.linkLabel1.Location = new System.Drawing.Point(215, 371);
+			this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new System.Drawing.Size(211, 21);
+			this.linkLabel1.TabIndex = 22;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.Text = "Manage Rubric Level";
+			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+			// 
+			// button2
+			// 
+			this.button2.BackColor = System.Drawing.Color.Silver;
+			this.button2.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.Location = new System.Drawing.Point(4, 365);
+			this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(93, 37);
+			this.button2.TabIndex = 21;
+			this.button2.Text = "Cancel";
+			this.button2.UseVisualStyleBackColor = false;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// comboBox2
 			// 
@@ -191,7 +222,7 @@
 			this.comboBox2.Location = new System.Drawing.Point(15, 169);
 			this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(283, 21);
+			this.comboBox2.Size = new System.Drawing.Size(390, 21);
 			this.comboBox2.TabIndex = 12;
 			// 
 			// label3
@@ -208,19 +239,6 @@
 			this.label3.Size = new System.Drawing.Size(133, 15);
 			this.label3.TabIndex = 11;
 			this.label3.Text = "Measurement level";
-			// 
-			// button2
-			// 
-			this.button2.BackColor = System.Drawing.Color.Silver;
-			this.button2.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(140, 370);
-			this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(112, 27);
-			this.button2.TabIndex = 21;
-			this.button2.Text = "Cancel";
-			this.button2.UseVisualStyleBackColor = false;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// Rubric_Level
 			// 
@@ -254,5 +272,6 @@
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.LinkLabel linkLabel1;
 	}
 }

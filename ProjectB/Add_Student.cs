@@ -29,10 +29,15 @@ namespace ProjectB
 				s.set_Contact(Contact.Text);
 				s.set_Email(Email.Text);
 				s.set_Status(Status.Text);
-				if ((s.get_FirstName() == null) || (s.get_LastName() == null) || (s.get_Contact() == null) || (s.get_Registration_No() == null) || (s.get_Email() == null) || (s.get_Status() == null))
+				if ((FirstName.Text == "") || (LastName.Text == "") || (Contact.Text == "") || (RegistrationNumber.Text == "") || (Email.Text == "") || (Status.Text == ""))
 				{
 					MessageBox.Show("Submssion is not allowed with null values");
 				}
+				else if ((s.get_FirstName() == null) || (s.get_LastName() == null) || (s.get_Contact() == null) || (s.get_Registration_No() == null) || (s.get_Email() == null) || (s.get_Status() == null))
+				{
+					MessageBox.Show("Invalid Data Entered!!");
+				}
+				
 				else
 				{
 					string constr = "Data Source=DESKTOP-GP94IEM\\SQLEXPRESS;Initial Catalog=Projectb;Integrated Security=True";

@@ -173,6 +173,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BackColor = System.Drawing.Color.Silver;
 			this.panel2.Controls.Add(this.label2);
 			this.panel2.Controls.Add(this.label1);
 			this.panel2.Controls.Add(this.linkLabel1);

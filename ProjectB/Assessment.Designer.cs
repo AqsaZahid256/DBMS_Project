@@ -181,7 +181,7 @@
 			// 
 			// panel2
 			// 
-			this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.panel2.BackColor = System.Drawing.Color.Silver;
 			this.panel2.Controls.Add(this.dateTimePicker1);
 			this.panel2.Controls.Add(this.TitleName);
 			this.panel2.Controls.Add(this.button1);

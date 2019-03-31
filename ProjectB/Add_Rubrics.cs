@@ -42,9 +42,12 @@ namespace ProjectB
 		{
 			return CloId;
 		}
-		public void set_CloId(int value)
+		public void set_CloId(string value)
 		{
-			CloId = value;
+			if (value != "")
+			{
+				CloId = Convert.ToInt16(value);
+			}
 
 		}
 	}

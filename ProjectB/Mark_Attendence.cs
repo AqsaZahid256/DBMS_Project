@@ -41,10 +41,13 @@ namespace ProjectB
 				s.set_Registration_No(comboBox2.Text);
 				s.set_Attendence_Date(dateTimePicker1.Value);
 				s.set_Student_Status(comboBox1.Text);
-
-				if ((s.get_Registration_No() == "" || (s.get_Attendence_Date() == null)) || (s.get_Student_Status() == null))
+				if ((comboBox2.Text == "") || (dateTimePicker1.Value == null) || (comboBox1.Text == ""))
 				{
 					MessageBox.Show("Submssion is not allowed with null values");
+				}
+				else if ((s.get_Registration_No() == null || (s.get_Attendence_Date() == null)) || (s.get_Student_Status() == null))
+				{
+					MessageBox.Show("Invalid Data Entered!!");
 				}
 				else
 				{

@@ -48,29 +48,34 @@ namespace ProjectB
 					string s3 = string.Format("Select Id from Rubric where Details=@Details");
 					SqlCommand a3 = new SqlCommand(s3, c);
 					a3.Parameters.AddWithValue("@Details", comboBox1.Text);
-					int rows = (int)a3.ExecuteScalar();
-					string s2 = string.Format("INSERT INTO RubricLevel(Details,MeasurementLevel, RubricId) values('" + Details.Text + "','" + comboBox2.Text + "','" + rows +"')");
-					SqlCommand a2 = new SqlCommand(s2, c);
-					int rows1 = a2.ExecuteNonQuery();
-					if (rows1 != 0)
+					
+					if (a3.ExecuteScalar() != null)
 					{
-						MessageBox.Show("Rubric Added");
-						this.Close();
-						//Manage_Rubrics t = new Manage_Rubrics();
-						//t.Show();
+
+						int rows = (int)a3.ExecuteScalar();
+						string s2 = string.Format("INSERT INTO RubricLevel(Details,MeasurementLevel, RubricId) values('" + Details.Text + "','" + comboBox2.Text + "','" + rows + "')");
+						SqlCommand a2 = new SqlCommand(s2, c);
+						int rows1 = a2.ExecuteNonQuery();
+						if (rows1 != 0)
+						{
+							MessageBox.Show("RubricLevel Added");
+							this.Close();
+							//Manage_Rubrics t = new Manage_Rubrics();
+							//t.Show();
+						}
+						c.Close();
 					}
-					c.Close();
+					else
+					{
+						MessageBox.Show("Invalid Rubric Details");
+
+					}
 				}
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
 			}
-		}
-
-		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-		{
-
 		}
 
 		private void label8_Click(object sender, EventArgs e)
@@ -81,6 +86,12 @@ namespace ProjectB
 		private void button2_Click(object sender, EventArgs e)
 		{
 			this.Hide();
+		}
+
+		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Manage_Rubric c = new Manage_Rubric();
+			c.Show();
 		}
 	}
 }

@@ -129,10 +129,10 @@ namespace ProjectB
 			try
 			{
 				Add_Rubrics  s = new Add_Rubrics();
-				s.set_CloId(Convert.ToInt16(comboBox1.Text));
+				s.set_CloId(comboBox1.Text);
 				s.set_Details(Deta.Text);
 
-				if ((s.get_CloId() == 0) || (s.get_Details() == null))
+				if ((s.get_CloId() == 0) || (s.get_Details() == null || s.get_Details()==""))
 				{
 					MessageBox.Show("Submssion is not allowed with null values");
 				}

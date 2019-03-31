@@ -55,7 +55,7 @@ namespace ProjectB
 			bool f = true;
 			foreach (char c in value)
 			{
-				if (!char.IsLetter(c))
+				if (!char.IsLetter(c) && !char.IsDigit(c) && !char.IsWhiteSpace(c))
 				{
 					f = false;
 
@@ -64,10 +64,6 @@ namespace ProjectB
 			if (f == true)
 			{
 				Name = value;
-			}
-			else
-			{
-				MessageBox.Show("Please enter only letter");
 			}
 		}
 	}

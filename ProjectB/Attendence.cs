@@ -42,7 +42,10 @@ namespace ProjectB
 		}
 		public void set_Student_Status(string value)
 		{
-			Student_Status = value;
+			if (value != "")
+			{
+				Student_Status = value;
+			}
 		}
 
 		public void set_Attendence_Date(DateTime value)
@@ -93,7 +96,7 @@ namespace ProjectB
 				}
 				if (f == false)
 				{
-					MessageBox.Show("Please enter according to format 2016-cs-256 OR 2016-cs-56 OR 2016-cs-6");
+					//MessageBox.Show("Please enter according to format 2016-cs-256 OR 2016-cs-56 OR 2016-cs-6");
 				}
 				else
 				{
@@ -137,7 +140,7 @@ namespace ProjectB
 				}
 				if (f == false)
 				{
-					MessageBox.Show("please enter according to format 2016-cs-25");
+					//MessageBox.Show("please enter according to format 2016-cs-25");
 				}
 				else
 				{
@@ -181,7 +184,7 @@ namespace ProjectB
 				}
 				if (f == false)
 				{
-					MessageBox.Show("please enter according to format 2016-cs-2");
+					//MessageBox.Show("please enter according to format 2016-cs-2");
 				}
 				else
 				{
@@ -190,10 +193,10 @@ namespace ProjectB
 			}
 			else
 			{
-				MessageBox.Show("please enter according to format 2016-CS-256 OR 2016-CS-56 OR 2016-CS-6");
+				//MessageBox.Show("please enter according to format 2016-CS-256 OR 2016-CS-56 OR 2016-CS-6");
 			}
 
-			Registration_No = value;
+			//Registration_No = value;
 		}
 
 	}

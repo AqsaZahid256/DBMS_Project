@@ -30,14 +30,26 @@ namespace ProjectB
 		private DateTime Date_Created;
 		private int Total_Marks;
 		private int Total_Weightage;
-		// Student Name getter setter
+		//  Name getter setter
 		public string get_Title()
 		{
 			return Title;
 		}
 	    public void set_Title(string value)
 	    {
-		    Title = value;
+			bool f = true;
+			foreach (char c in value)
+			{
+				if (!char.IsLetter(c) && !char.IsWhiteSpace(c) &&!char.IsDigit(c))
+				{
+					f = false;
+
+				}
+			}
+			if (f == true)
+			{
+				Title = value;
+			}
 	    }
 		public DateTime get_Date_Created()
 		{
@@ -67,7 +79,7 @@ namespace ProjectB
 		{
 			if (value != "")
 			{
-				Total_Marks = Convert.ToInt16(value);
+				Total_Weightage = Convert.ToInt16(value);
 			}
 		}
 	}

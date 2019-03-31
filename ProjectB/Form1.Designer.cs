@@ -39,12 +39,20 @@
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.pictureBox14 = new System.Windows.Forms.PictureBox();
+			this.linkLabel13 = new System.Windows.Forms.LinkLabel();
+			this.pictureBox13 = new System.Windows.Forms.PictureBox();
+			this.pictureBox12 = new System.Windows.Forms.PictureBox();
+			this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+			this.pictureBox11 = new System.Windows.Forms.PictureBox();
+			this.linkLabel10 = new System.Windows.Forms.LinkLabel();
 			this.pictureBox10 = new System.Windows.Forms.PictureBox();
 			this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+			this.linkLabel7 = new System.Windows.Forms.LinkLabel();
 			this.pictureBox9 = new System.Windows.Forms.PictureBox();
 			this.linkLabel8 = new System.Windows.Forms.LinkLabel();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.linkLabel7 = new System.Windows.Forms.LinkLabel();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.linkLabel4 = new System.Windows.Forms.LinkLabel();
 			this.linkLabel5 = new System.Windows.Forms.LinkLabel();
@@ -57,6 +65,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -187,11 +199,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(40, 3);
+			this.pictureBox4.Location = new System.Drawing.Point(218, 3);
 			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(596, 323);
+			this.pictureBox4.Size = new System.Drawing.Size(364, 323);
 			this.pictureBox4.TabIndex = 8;
 			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
 			// 
 			// panel2
 			// 
@@ -199,6 +212,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel2.BackColor = System.Drawing.Color.Transparent;
+			this.panel2.Controls.Add(this.pictureBox14);
+			this.panel2.Controls.Add(this.linkLabel13);
+			this.panel2.Controls.Add(this.pictureBox13);
+			this.panel2.Controls.Add(this.pictureBox12);
+			this.panel2.Controls.Add(this.linkLabel12);
+			this.panel2.Controls.Add(this.linkLabel11);
+			this.panel2.Controls.Add(this.pictureBox11);
+			this.panel2.Controls.Add(this.linkLabel10);
 			this.panel2.Controls.Add(this.pictureBox10);
 			this.panel2.Controls.Add(this.linkLabel9);
 			this.panel2.Controls.Add(this.linkLabel7);
@@ -223,6 +244,126 @@
 			this.panel2.Size = new System.Drawing.Size(663, 552);
 			this.panel2.TabIndex = 9;
 			// 
+			// pictureBox14
+			// 
+			this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+			this.pictureBox14.Location = new System.Drawing.Point(189, 510);
+			this.pictureBox14.Name = "pictureBox14";
+			this.pictureBox14.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox14.TabIndex = 27;
+			this.pictureBox14.TabStop = false;
+			// 
+			// linkLabel13
+			// 
+			this.linkLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel13.AutoSize = true;
+			this.linkLabel13.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel13.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel13.LinkColor = System.Drawing.Color.White;
+			this.linkLabel13.Location = new System.Drawing.Point(252, 510);
+			this.linkLabel13.Name = "linkLabel13";
+			this.linkLabel13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel13.Size = new System.Drawing.Size(246, 21);
+			this.linkLabel13.TabIndex = 26;
+			this.linkLabel13.TabStop = true;
+			this.linkLabel13.Text = "Assessment Wise Report";
+			this.linkLabel13.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel13_LinkClicked);
+			// 
+			// pictureBox13
+			// 
+			this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+			this.pictureBox13.Location = new System.Drawing.Point(365, 425);
+			this.pictureBox13.Name = "pictureBox13";
+			this.pictureBox13.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox13.TabIndex = 25;
+			this.pictureBox13.TabStop = false;
+			// 
+			// pictureBox12
+			// 
+			this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+			this.pictureBox12.Location = new System.Drawing.Point(365, 457);
+			this.pictureBox12.Name = "pictureBox12";
+			this.pictureBox12.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox12.TabIndex = 24;
+			this.pictureBox12.TabStop = false;
+			// 
+			// linkLabel12
+			// 
+			this.linkLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel12.AutoSize = true;
+			this.linkLabel12.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel12.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel12.LinkColor = System.Drawing.Color.White;
+			this.linkLabel12.Location = new System.Drawing.Point(430, 425);
+			this.linkLabel12.Name = "linkLabel12";
+			this.linkLabel12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel12.Size = new System.Drawing.Size(200, 21);
+			this.linkLabel12.TabIndex = 23;
+			this.linkLabel12.TabStop = true;
+			this.linkLabel12.Text = "Manage Assessment";
+			this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
+			// 
+			// linkLabel11
+			// 
+			this.linkLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel11.AutoSize = true;
+			this.linkLabel11.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel11.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel11.LinkColor = System.Drawing.Color.White;
+			this.linkLabel11.Location = new System.Drawing.Point(430, 462);
+			this.linkLabel11.Name = "linkLabel11";
+			this.linkLabel11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel11.Size = new System.Drawing.Size(156, 21);
+			this.linkLabel11.TabIndex = 22;
+			this.linkLabel11.TabStop = true;
+			this.linkLabel11.Text = "Student Result";
+			this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
+			// 
+			// pictureBox11
+			// 
+			this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+			this.pictureBox11.Location = new System.Drawing.Point(365, 393);
+			this.pictureBox11.Name = "pictureBox11";
+			this.pictureBox11.Size = new System.Drawing.Size(68, 26);
+			this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox11.TabIndex = 21;
+			this.pictureBox11.TabStop = false;
+			// 
+			// linkLabel10
+			// 
+			this.linkLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel10.AutoSize = true;
+			this.linkLabel10.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel10.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel10.LinkColor = System.Drawing.Color.White;
+			this.linkLabel10.Location = new System.Drawing.Point(430, 392);
+			this.linkLabel10.Name = "linkLabel10";
+			this.linkLabel10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel10.Size = new System.Drawing.Size(211, 21);
+			this.linkLabel10.TabIndex = 20;
+			this.linkLabel10.TabStop = true;
+			this.linkLabel10.Text = "Manage Rubric Level";
+			this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked_1);
+			// 
 			// pictureBox10
 			// 
 			this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
@@ -244,7 +385,7 @@
 			this.linkLabel9.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.linkLabel9.LinkColor = System.Drawing.Color.White;
-			this.linkLabel9.Location = new System.Drawing.Point(430, 329);
+			this.linkLabel9.Location = new System.Drawing.Point(150, 457);
 			this.linkLabel9.Name = "linkLabel9";
 			this.linkLabel9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.linkLabel9.Size = new System.Drawing.Size(167, 21);
@@ -252,6 +393,25 @@
 			this.linkLabel9.TabStop = true;
 			this.linkLabel9.Text = "Add Assessment";
 			this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
+			// 
+			// linkLabel7
+			// 
+			this.linkLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel7.AutoSize = true;
+			this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel7.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.linkLabel7.LinkColor = System.Drawing.Color.White;
+			this.linkLabel7.Location = new System.Drawing.Point(149, 425);
+			this.linkLabel7.Name = "linkLabel7";
+			this.linkLabel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.linkLabel7.Size = new System.Drawing.Size(179, 21);
+			this.linkLabel7.TabIndex = 10;
+			this.linkLabel7.TabStop = true;
+			this.linkLabel7.Text = "Mark Attendence";
+			this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
 			// 
 			// pictureBox9
 			// 
@@ -274,13 +434,13 @@
 			this.linkLabel8.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.linkLabel8.LinkColor = System.Drawing.Color.White;
-			this.linkLabel8.Location = new System.Drawing.Point(448, 292);
+			this.linkLabel8.Location = new System.Drawing.Point(150, 393);
 			this.linkLabel8.Name = "linkLabel8";
 			this.linkLabel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.linkLabel8.Size = new System.Drawing.Size(133, 21);
+			this.linkLabel8.Size = new System.Drawing.Size(178, 21);
 			this.linkLabel8.TabIndex = 16;
 			this.linkLabel8.TabStop = true;
-			this.linkLabel8.Text = "Rubric Level";
+			this.linkLabel8.Text = "Add Rubric Level";
 			this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
 			// 
 			// pictureBox8
@@ -293,25 +453,6 @@
 			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox8.TabIndex = 15;
 			this.pictureBox8.TabStop = false;
-			// 
-			// linkLabel7
-			// 
-			this.linkLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.linkLabel7.AutoSize = true;
-			this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
-			this.linkLabel7.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.linkLabel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.linkLabel7.LinkColor = System.Drawing.Color.White;
-			this.linkLabel7.Location = new System.Drawing.Point(430, 361);
-			this.linkLabel7.Name = "linkLabel7";
-			this.linkLabel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.linkLabel7.Size = new System.Drawing.Size(179, 21);
-			this.linkLabel7.TabIndex = 10;
-			this.linkLabel7.TabStop = true;
-			this.linkLabel7.Text = "Mark Attendence";
-			this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
 			// 
 			// pictureBox5
 			// 
@@ -334,7 +475,7 @@
 			this.linkLabel4.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.linkLabel4.LinkColor = System.Drawing.Color.White;
-			this.linkLabel4.Location = new System.Drawing.Point(150, 457);
+			this.linkLabel4.Location = new System.Drawing.Point(430, 327);
 			this.linkLabel4.Name = "linkLabel4";
 			this.linkLabel4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.linkLabel4.Size = new System.Drawing.Size(120, 21);
@@ -353,7 +494,7 @@
 			this.linkLabel5.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.linkLabel5.LinkColor = System.Drawing.Color.White;
-			this.linkLabel5.Location = new System.Drawing.Point(150, 425);
+			this.linkLabel5.Location = new System.Drawing.Point(431, 359);
 			this.linkLabel5.Name = "linkLabel5";
 			this.linkLabel5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.linkLabel5.Size = new System.Drawing.Size(155, 21);
@@ -394,7 +535,7 @@
 			this.linkLabel6.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.linkLabel6.LinkColor = System.Drawing.Color.White;
-			this.linkLabel6.Location = new System.Drawing.Point(155, 393);
+			this.linkLabel6.Location = new System.Drawing.Point(430, 292);
 			this.linkLabel6.Name = "linkLabel6";
 			this.linkLabel6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.linkLabel6.Size = new System.Drawing.Size(166, 21);
@@ -424,6 +565,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -458,6 +603,14 @@
 		private System.Windows.Forms.LinkLabel linkLabel8;
 		private System.Windows.Forms.PictureBox pictureBox10;
 		private System.Windows.Forms.LinkLabel linkLabel9;
+		private System.Windows.Forms.PictureBox pictureBox11;
+		private System.Windows.Forms.LinkLabel linkLabel10;
+		private System.Windows.Forms.LinkLabel linkLabel11;
+		private System.Windows.Forms.PictureBox pictureBox13;
+		private System.Windows.Forms.PictureBox pictureBox12;
+		private System.Windows.Forms.LinkLabel linkLabel12;
+		private System.Windows.Forms.LinkLabel linkLabel13;
+		private System.Windows.Forms.PictureBox pictureBox14;
 	}
 }
 
